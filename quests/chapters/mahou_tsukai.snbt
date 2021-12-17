@@ -1,0 +1,64 @@
+{
+	id: "5F6D72E1775DCD63"
+	group: ""
+	order_index: 3
+	filename: "mahou_tsukai"
+	title: "mahou tsukai"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "the start of it all"
+			x: -6.0d
+			y: -0.5d
+			id: "7F30C90DB696BBBE"
+			tasks: [{
+				id: "40D1993DDD119828"
+				type: "item"
+				item: "mahoutsukai:dagger"
+			}]
+			rewards: [{
+				id: "5A448558773977B5"
+				type: "item"
+				item: "mahoutsukai:powdered_iron"
+				count: 3
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["7F30C90DB696BBBE"]
+			id: "5DE40B9DCB40C453"
+			tasks: [{
+				id: "4B9AA796ADBA9D27"
+				type: "item"
+				item: {
+					id: "mahoutsukai:caliburn"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "58DBE27F378BE6A2"
+				type: "item"
+				item: {
+					id: "mahoutsukai:attuned_emerald"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_GEM_STORED_MANA: 0
+						}
+					}
+				}
+			}]
+		}
+	]
+}

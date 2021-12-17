@@ -1,0 +1,483 @@
+{
+	id: "28F56F93C6CD6E0A"
+	group: ""
+	order_index: 0
+	filename: "beginning"
+	title: "beginning"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "craft a crafting table"
+			x: -4.0d
+			y: -1.0d
+			subtitle: "craft a craftin table"
+			description: [""]
+			id: "2410CCDC747FE2B3"
+			tasks: [{
+				id: "12B7DC3C9132312A"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [
+				{
+					id: "158D8804EFDAEDF5"
+					type: "item"
+					item: "minecraft:stick"
+					count: 4
+				}
+				{
+					id: "1E818B3A3A86D8DE"
+					type: "item"
+					item: "minecraft:oak_wood"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "craft stone tools"
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["2410CCDC747FE2B3"]
+			id: "0436610B68D72FD1"
+			tasks: [
+				{
+					id: "3EBA50C9E8EE0A47"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4626ED904A74330B"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E97F086E9AB4E61"
+					type: "item"
+					item: {
+						id: "minecraft:stone_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6B7D00BC467C4274"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "75C81714A412F0FE"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 3
+			}]
+		}
+		{
+			title: "craft iron tools"
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["0436610B68D72FD1"]
+			id: "5A8B1B6C6AF8ED0E"
+			tasks: [
+				{
+					id: "0CE7D35AEF2D8011"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F170228015CFFB0"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77C0508A04D65C6F"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "54EDF93EE2FF67A8"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 13
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["5A8B1B6C6AF8ED0E"]
+			id: "606E966ED0F8BB0E"
+			tasks: [{
+				id: "51B26AA65BC844F6"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+			rewards: [{
+				id: "05541E056C68AC17"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 2
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			dependencies: ["606E966ED0F8BB0E"]
+			id: "513336DC961510A9"
+			tasks: [{
+				id: "56E8BA563DA9BE8E"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+			rewards: [{
+				id: "6B93A6CD5662D0F7"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			hide_dependency_lines: false
+			dependencies: ["606E966ED0F8BB0E"]
+			id: "342307D31B9F42AB"
+			tasks: [
+				{
+					id: "29E1990FEB5116EC"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "688DA195CDB69728"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "30405A26D497CA2A"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -5.0d
+			dependencies: [
+				"606E966ED0F8BB0E"
+				"513336DC961510A9"
+				"6E4C663DC254C67F"
+			]
+			id: "291D86373C41B7F9"
+			tasks: [{
+				id: "5F3BE08A20A3A70F"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "41D74DD934B9AE75"
+				type: "item"
+				item: "minecraft:experience_bottle"
+				count: 20
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			id: "6E4C663DC254C67F"
+			tasks: [{
+				id: "602B837B291127EE"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+			rewards: [{
+				id: "409F56842D6F3F92"
+				type: "item"
+				item: "minecraft:experience_bottle"
+				count: 5
+			}]
+		}
+		{
+			title: "visit the nether"
+			x: 9.0d
+			y: -3.0d
+			dependencies: ["513336DC961510A9"]
+			id: "4AA3BBA7F375A0FE"
+			tasks: [{
+				id: "0EF0F01B4D7764A4"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -6.0d
+			shape: "hexagon"
+			dependencies: ["291D86373C41B7F9"]
+			id: "170D8AEA392D3247"
+			tasks: [{
+				id: "51FC04043523BE67"
+				type: "advancement"
+				title: "enchant a tool/book"
+				advancement: "minecraft:story/enchant_item"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "29900BBAFD8EC4B3"
+				type: "item"
+				item: "minecraft:experience_bottle"
+				count: 10
+			}]
+		}
+		{
+			x: 9.0d
+			y: -5.0d
+			shape: "diamond"
+			dependencies: ["4AA3BBA7F375A0FE"]
+			id: "0831AEA04C47BB7C"
+			tasks: [{
+				id: "7B6B700548FB3D39"
+				type: "advancement"
+				title: "nether world"
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			id: "40EB77B4E229C6B2"
+			tasks: [{
+				id: "3CA836456B3990FB"
+				type: "advancement"
+				title: "kill a monster"
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+			}]
+		}
+		{
+			title: "craft a bow/crossbow"
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["40EB77B4E229C6B2"]
+			id: "6FFAF33041C716B9"
+			tasks: [
+				{
+					id: "7EFDE157BA1E6E83"
+					type: "item"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7DDCD1214385E389"
+					type: "item"
+					item: {
+						id: "minecraft:crossbow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "05AB3802B35692AF"
+				type: "item"
+				item: "minecraft:arrow"
+				count: 20
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["6FFAF33041C716B9"]
+			id: "7905FEF9DD219AF4"
+			tasks: [{
+				id: "4ACD0D5FED4F3DF3"
+				type: "advancement"
+				advancement: "minecraft:adventure/shoot_arrow"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2AEEEED10656F4CE"
+				type: "item"
+				item: {
+					id: "mmorpg:stat_soul/stat_soul"
+					Count: 1b
+					tag: {
+						CustomModelData: 5
+						stat_soul: {
+							rar: "uncommon"
+							tier: 3
+							gear-: 1b
+							can_sal: 1b
+							uniq: ""
+							slot: "bow"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["6FFAF33041C716B9"]
+			id: "39D71A2741641517"
+			tasks: [{
+				id: "1DCD4E6121EA59EC"
+				type: "advancement"
+				title: "use a crossbow"
+				advancement: "minecraft:adventure/ol_betsy"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "0902B4857B89ACFD"
+				type: "item"
+				item: {
+					id: "mmorpg:stat_soul/stat_soul"
+					Count: 1b
+					tag: {
+						CustomModelData: 6
+						stat_soul: {
+							rar: "uncommon"
+							tier: 3
+							gear-: 1b
+							can_sal: 1b
+							uniq: ""
+							slot: "crossbow"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "get your hands on a weapon projection"
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["6FFAF33041C716B9"]
+			id: "6A96F2C5DC66E552"
+			tasks: [{
+				id: "188374D78CB5BF02"
+				type: "item"
+				item: {
+					id: "mahoutsukai:weapon_projectile_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7409E0EE83E00EE4"
+				type: "item"
+				item: {
+					id: "mmorpg:stat_soul/stat_soul"
+					Count: 1b
+					tag: {
+						CustomModelData: 5
+						stat_soul: {
+							rar: "unique"
+							tier: 2
+							gear-: 1b
+							can_sal: 1b
+							uniq: ""
+							slot: "bow"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "get blaze powder"
+			x: 11.0d
+			y: -3.0d
+			dependencies: ["4AA3BBA7F375A0FE"]
+			id: "15CC08EDAC7806E1"
+			tasks: [{
+				id: "787A8DAC4F859D3F"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			dependencies: ["4AA3BBA7F375A0FE"]
+			id: "666D691C5DFD8AB0"
+			tasks: [{
+				id: "2B58D092A96703BF"
+				type: "advancement"
+				title: "find ancient debris"
+				advancement: "minecraft:nether/obtain_ancient_debris"
+				criterion: ""
+			}]
+		}
+	]
+}

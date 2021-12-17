@@ -1,0 +1,74 @@
+{
+	id: "304F14C09EEF79E3"
+	group: ""
+	order_index: 2
+	filename: "tensura"
+	title: "tensura"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "become a demon lord"
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["57AC2E11CA24DDB3"]
+			id: "09E22D944FFE457E"
+			tasks: [{
+				id: "69F1C7CA28675331"
+				type: "advancement"
+				advancement: "ttigraas:demon_lord"
+				criterion: ""
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			id: "654C6346823A77CC"
+			tasks: [{
+				id: "3F416F9E0F1D3656"
+				type: "advancement"
+				title: "defeat orc disaster"
+				advancement: "ttigraas:the_living_disaster"
+				criterion: ""
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			dependencies: ["654C6346823A77CC"]
+			id: "57AC2E11CA24DDB3"
+			tasks: [{
+				id: "7920522D40985A23"
+				type: "advancement"
+				title: "become a demon lord seed"
+				advancement: "ttigraas:demon_seed"
+				criterion: ""
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.0d
+			id: "3BA4962559E26BB6"
+			tasks: [{
+				id: "1305E1F405D4A82F"
+				type: "kill"
+				title: "defeat the spirit colossus"
+				entity: "ttigraas:spirit_protector_colossus"
+				value: 100L
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			dependencies: ["3BA4962559E26BB6"]
+			id: "35E9FCAEB73D3029"
+			tasks: [{
+				id: "1964CD158307EDB1"
+				type: "advancement"
+				title: "gain a spirit"
+				advancement: "ttigraas:labyrinth_conquerer"
+				criterion: ""
+			}]
+		}
+	]
+}

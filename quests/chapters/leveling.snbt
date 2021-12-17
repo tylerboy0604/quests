@@ -1,0 +1,180 @@
+{
+	id: "6173E4F128390FA3"
+	group: ""
+	order_index: 1
+	filename: "leveling"
+	title: "leveling"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -9.5d
+			y: -1.5d
+			id: "791A9E85E5CD78D7"
+			tasks: [{
+				id: "04872031A347F4F7"
+				type: "xp"
+				value: 5L
+				points: false
+			}]
+			rewards: [{
+				id: "29A904E68C7A4386"
+				type: "item"
+				item: "minecraft:cooked_beef"
+				count: 20
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.0d
+			dependencies: ["791A9E85E5CD78D7"]
+			id: "563EEB2A809FF828"
+			tasks: [{
+				id: "47818735AE109371"
+				type: "xp"
+				value: 10L
+				points: false
+			}]
+			rewards: [
+				{
+					id: "3D6A29F19006C0F0"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:efficiency"
+							}]
+						}
+					}
+				}
+				{
+					id: "35A7E0B1D03AB1A1"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:sharpness"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -4.0d
+			dependencies: ["563EEB2A809FF828"]
+			id: "10CC52F3AA48DE20"
+			tasks: [{
+				id: "2AF4F7801C02D30C"
+				type: "xp"
+				value: 30L
+				points: false
+			}]
+			rewards: [
+				{
+					id: "7A7667F04E57349F"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 2s
+								id: "minecraft:sharpness"
+							}]
+						}
+					}
+				}
+				{
+					id: "1C9CC75A62FC2AB8"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "minecraft:unbreaking"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["311F6833ABB7E397"]
+			id: "4162D120B0836416"
+			tasks: [{
+				id: "384D50B22D6DF905"
+				type: "xp"
+				value: 50L
+				points: false
+			}]
+			rewards: [
+				{
+					id: "43D736853E6A29D8"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:infinity"
+							}]
+						}
+					}
+				}
+				{
+					id: "37CEDF5485903277"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:mending"
+							}]
+						}
+					}
+				}
+				{
+					id: "45C0448551CF37EB"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "minecraft:fortune"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["10CC52F3AA48DE20"]
+			id: "311F6833ABB7E397"
+			tasks: [{
+				id: "7AA3892221B71624"
+				type: "xp"
+				value: 40L
+				points: false
+			}]
+		}
+	]
+}
